@@ -15,6 +15,13 @@ ex. function boxClicked(e) {
 ex. to check if correct  // Check if the answer is correct
         if (playerAnswer.toLowerCase() === questionObj.answer.toLowerCase()) {
             // Correct answer, proceed with marking the box
+//questions/answers/images
+let questions = [
+{image: 'image.jpg', 'question: question1', 'answer: answer1'}
+
+let lives = 3
+let lives text: =
+let lives lost text=
 # API TO USE
 Naruto API = https://narutodb.xyz/api/character/55
 DemonSlayer= https://demon-slayer.cyclic.app/api/
