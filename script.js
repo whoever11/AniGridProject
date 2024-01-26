@@ -1,0 +1,1 @@
+let restart = document.querySelector("#restartBtn")
