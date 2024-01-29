@@ -31,3 +31,10 @@ A character icon will be there for the player and beside the icon will be the th
 then a 3x3 grid consits of 9 boxes for the player to pick a box for the question.
 the question will then appear below the grid in a box to show the question and the answer submit area will be below that area.
 at the bottom of the screen will be a restart button if the player would like to restart the game.
+
+
+Resources 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
