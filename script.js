@@ -1,5 +1,5 @@
 let restart = document.querySelector("#restartBtn")
-let questions = [
+let questionsAndAnswers = [
     { question: "Who is the Main Character in One Piece?", answer: "Luffy" },,
     { question: "My Hero Academia powers are called?", answer: "Quirks" },
     { question: "Naruto's village is called?", answer: "Hidden Leaf Village" },
@@ -20,3 +20,8 @@ let questions = [
     { question: "What is Zenitsu’s first form called?", answer: "Thunderclap" },
     { question: "who gave luffy his straw hat?", answer: "Shanks" },
 ]
+function displayRandomQuestion() {
+    const randomIndex = Math.floor(Math.random() * questionsAndAnswers.length)
+    const randomQuestion = questionsAndAnswers[randomIndex]
+    document.querySelector('.question-text').innerText = randomQuestion.question
+}
