@@ -22,15 +22,42 @@ let questionsAndAnswers = [
 //Above is the array of questions and answers
 
 //below is function to display random question
+let questionObj; // Declare questionObj outside the function
+
 function displayRandomQuestion() {
    if (questionsAndAnswers.length === 0) {
        return
     }
     const randomQuestion = questionsAndAnswers[Math.floor(Math.random() * questionsAndAnswers.length)]
-    const questionObj = questionsAndAnswers.splice(randomQuestion, 1)[0] // this will make it so questions don't repeat
+    questionObj = randomQuestion // Assign randomQuestion to questionObj
     document.querySelector("#question").textContent = questionObj.question
 }
+
 // below is box to click to display random question
-document.querySelectorAll(`box`) .forEach(box => {
+document.querySelectorAll(`.box`).forEach(box => {
     box.addEventListener('click', displayRandomQuestion)
-    } )
+});
+
+// below is the function to check if answer is correct and submit
+document.getElementById(`submit`).addEventListener(`click`, function() {
+    let userAnswer = document.getElementById(`answer`).value
+    if (userAnswer.toLowerCase() === questionObj.answer.toLowerCase()) {
+        alert(`Correct!`)
+    } else {
+        alert(`Incorrect!`)
+    } 
+});
+
+// restart button
+document.getElementById(`restart`).addEventListener(`click`, function() {
+    document.getElementById(`answer`).value = ``
+    document.getElementById(`question`).innerText = ``
+});
+
+// below is for the score
+let score = 0
+
+if (userAnswer.toLowerCase() === questionObj.answer.toLowerCase()) {
+    score += 1
+    document.getElementById(`score`).innerText = score.toString()
+}
