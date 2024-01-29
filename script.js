@@ -22,8 +22,6 @@ let questionsAndAnswers = [
 //Above is the array of questions and answers
 
 //below is function to display random question
-let questionObj; // Declare questionObj outside the function
-
 function displayRandomQuestion() {
    if (questionsAndAnswers.length === 0) {
        return
@@ -36,7 +34,7 @@ function displayRandomQuestion() {
 // below is box to click to display random question
 document.querySelectorAll(`.box`).forEach(box => {
     box.addEventListener('click', displayRandomQuestion)
-});
+})
 
 // below is the function to check if answer is correct and submit
 document.getElementById(`submit`).addEventListener(`click`, function() {
@@ -46,13 +44,14 @@ document.getElementById(`submit`).addEventListener(`click`, function() {
     } else {
         alert(`Incorrect!`)
     } 
-});
+    
+})
 
 // restart button
 document.getElementById(`restart`).addEventListener(`click`, function() {
     document.getElementById(`answer`).value = ``
     document.getElementById(`question`).innerText = ``
-});
+})
 
 // below is for the score
 let score = 0
