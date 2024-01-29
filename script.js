@@ -20,6 +20,12 @@ let questionsAndAnswers = [
     { question: "What is Zenitsu’s first form called?", answer: "Thunderclap" },
     { question: "who gave luffy his straw hat?", answer: "Shanks" },
 ]
+document.querySelectorAll('.box').forEach(box => {
+    box.addEventListener('click', function() {
+        displayRandomQuestion() 
+    })
+})
+
 function displayRandomQuestion() {
     const randomIndex = Math.floor(Math.random() * questionsAndAnswers.length)
     const randomQuestion = questionsAndAnswers[randomIndex]
