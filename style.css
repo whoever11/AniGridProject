@@ -40,6 +40,7 @@ h4 {
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
+  height: 100px;
 }
 .box:hover {
   background-color: #1A61B5;
@@ -53,6 +54,7 @@ h4 {
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
+  color:red ;
 }
 .Answer-area {
   display: flex;
@@ -70,4 +72,14 @@ h4 {
   cursor: pointer;
   font-size: 20px;
   color: white;
+}
+
+.restartBtn {
+  background: color #4bdb7c;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
