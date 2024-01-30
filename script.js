@@ -36,7 +36,7 @@ document.querySelectorAll(`.box`).forEach(box => {
     box.addEventListener('click', displayRandomQuestion)
 })
 
-// below is the function to check if answer is correct and submit
+// below is the function to check if answer is correct and submit and the score
 let score = 0
 document.getElementById(`submit`).addEventListener(`click`, function() {
     let userAnswer = document.getElementById(`answer`).value

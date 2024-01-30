@@ -1,3 +1,7 @@
+body {
+  background-color: #59b2c8;
+  font-family: 'Roboto', sans-serif;
+}
 .gameboard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -8,4 +12,13 @@
   background-color: #a62121;
   border-radius: 5px;
   padding: 10px;
+}
+.box1 {
+  background-color: #099ea5;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #a62121;
+  cursor: pointer;
 }
