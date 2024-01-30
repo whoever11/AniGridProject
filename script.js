@@ -37,13 +37,18 @@ document.querySelectorAll(`.box`).forEach(box => {
 })
 
 // below is the function to check if answer is correct and submit
+let score = 0
 document.getElementById(`submit`).addEventListener(`click`, function() {
     let userAnswer = document.getElementById(`answer`).value
     if (userAnswer.toLowerCase() === questionObj.answer.toLowerCase()) {
         alert(`Correct!`)
+        score += 1
     } else {
         alert(`Incorrect!`)
+        score -= 1
     } 
+document.getElementById(`answer`).value = ''
+document.getElementById('score').innerText = score.toString()
     
 })
 
@@ -51,12 +56,6 @@ document.getElementById(`submit`).addEventListener(`click`, function() {
 document.getElementById(`restart`).addEventListener(`click`, function() {
     document.getElementById(`answer`).value = ``
     document.getElementById(`question`).innerText = ``
+    document.getElementById(`score`).innerText = ``
 })
 
-// below is for the score
-let score = 0
-
-if (userAnswer.toLowerCase() === questionObj.answer.toLowerCase()) {
-    score += 1
-    document.getElementById(`score`).innerText = score.toString()
-}
