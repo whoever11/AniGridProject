@@ -31,3 +31,24 @@ h2 {
   margin-bottom: 20px;
   border-radius: 10px;
 }
+.box:hover {
+  background-color: #1A61B5;
+  cursor: pointer;
+}
+.box:active {
+  background-color: #1A61B5;
+}
+.Question-area {
+  background-color: #299DCE;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.Answer-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #83BB8C;
+  padding: 15px;
+  border-radius: 20px;
+}
