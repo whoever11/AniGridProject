@@ -8,3 +8,26 @@ body {
   margin: auto;
   max-width: 845px;
 }
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: black;
+}
+h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  color: black;
+}
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.box {
+  background-color: #299DCE;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
