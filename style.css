@@ -83,3 +83,16 @@ h4 {
   color: white;
   cursor: pointer;
 }
+
+input[type="text"],button {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+}
+
+/* cSpell:ignore gameboard */
+@media (max-width: 600px) {
+  .gameboard {
+    grid-template-columns: repeat (2, 1fr)
+  }
+}
