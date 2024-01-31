@@ -35,10 +35,11 @@ h4 {
 
 .title {
   color: white; 
+  background-color:black;
+  background-size: cover;
   margin: 0;
   padding-top: 1px;
   font-size: 40px;
-  
 }
 
 .gameboard {
@@ -70,7 +71,6 @@ h4 {
   padding: 40px; 
   margin-bottom: 10px; 
   height: 80px;
-
 }
 #box3 {
   background-color: #e20fc2; /* Default color for the boxes */
@@ -121,12 +121,14 @@ h4 {
 
 .Question-area {
   background-color: #873333; /* Background color for the question area */
-  color: rgb(199, 26, 26); /* Text color for the question */
+  color: rgb(235, 4, 4); /* Text color for the question */
   border-radius: 20px;
   padding: 10px;
   margin: 2px auto; 
   width: 90%;
-  height: 200px; 
+  height: 300px; 
+  font-size: 20px; 
+  border: 2px solid black; 
   text-align: center;
 }
 
