@@ -31,6 +31,70 @@ body, html {
   padding: 40px; 
   margin-bottom: 10px; 
 }
+#box0 {
+  background-color: #d21717; /* Default color for the boxes */
+  border-radius: 10px; 
+  padding: 40px; 
+  margin-bottom: 10px; 
+
+}
+#box1 {
+  background-color: #0e8dd6; /* Default color for the boxes */
+  border-radius: 10px; 
+  padding: 40px; 
+  margin-bottom: 10px; 
+
+}
+#box2 {
+  background-color: #d21717; /* Default color for the boxes */
+  border-radius: 10px; 
+  padding: 40px; 
+  margin-bottom: 10px; 
+
+}
+#box3 {
+  background-color: #0e8dd6; /* Default color for the boxes */
+  border-radius: 10px; 
+  padding: 40px; 
+  margin-bottom: 10px; 
+
+}
+#box4 {
+  background-color: #d21717; /* Default color for the boxes */
+  border-radius: 10px; 
+  padding: 40px; 
+  margin-bottom: 10px; 
+
+}
+#box5 {
+  background-color: #0e8dd6; /* Default color for the boxes */
+  border-radius: 10px; 
+  padding: 40px; 
+  margin-bottom: 10px; 
+
+}
+#box6 {
+  background-color: #d21717; /* Default color for the boxes */
+  border-radius: 10px; 
+  padding: 40px; 
+  margin-bottom: 10px; 
+
+}
+#box7 {
+  background-color: #0e8dd6; /* Default color for the boxes */
+  border-radius: 10px; 
+  padding: 40px; 
+  margin-bottom: 10px; 
+
+}
+#box8 {
+  background-color: #d21717; /* Default color for the boxes */
+  border-radius: 10px; 
+  padding: 40px; 
+  margin-bottom: 10px; 
+
+}
+
 
 .Question-area {
   background-color: #fff; /* Background color for the question area */
@@ -50,7 +114,7 @@ body, html {
 }
 
 .Answer {
-  flex-grow: 1; /* Answer area takes available space */
+  flex-grow: 11; /* Answer area takes available space */
 }
 
 .answer-area input[type="text"] {
