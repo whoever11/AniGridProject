@@ -1,98 +1,89 @@
-body {
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  background-color: #1A61B5;
-  color: white;
-  text-align: center;
+  background-color: #1A61B5; 
 }
+
 .container {
-  margin: auto;
-  max-width: 845px;
+  text-align: center; 
+  padding: 20px;
 }
-h1 {
-  font-size: 3rem;
-  margin-bottom: 0;
-  color: black;
+
+.title {
+  color: white; 
+  margin: 0;
+  padding-top: 20px; 
 }
-h2 {
-  font-size: 2rem;
-  margin-top: 0;
-  color: black;
-}
-h3 {
-  font-size: 1.5rem;
-  margin-top: 0;
-  color: black;
-}
-h4 {
-  font-size: 1.2rem;
-  margin-top: 0;
-  color: black;
-}
+
 .gameboard {
   display: grid;
-  grid-template-columns: repeat (3, 1fr);
-  gap: 10px;
-  margin: 20px 0;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; /* Space between boxes */
+  padding: 20px; /* Padding around the gameboard */
+  justify-content: center;
 }
 
 .box {
-  background-color: #299DCE;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  height: 100px;
+  background-color: #D9D9D9; /* Default color for the boxes */
+  border-radius: 10px; 
+  padding: 40px; 
+  margin-bottom: 10px; 
 }
-.box:hover {
-  background-color: #1A61B5;
-  cursor: pointer;
-}
-.box:active {
-  background-color: #1A61B5;
-}
+
 .Question-area {
-  background-color: #299DCE;
-  padding: 15px;
+  background-color: #fff; /* Background color for the question area */
+  color: black; /* Text color for the question */
   border-radius: 10px;
-  margin-bottom: 20px;
-  color:red ;
+  padding: 20px;
+  margin: 20px auto; 
+  width: 80%; 
 }
+
 .Answer-area {
   display: flex;
+  justify-content: center; /* Centering answer area contents */
   align-items: center;
-  justify-content: space-around;
-  background-color: #83BB8C;
-  padding: 15px;
-  border-radius: 20px;
+  gap: 10px; 
+  padding: 20px;
+}
+
+.Answer {
+  flex-grow: 1; /* Answer area takes available space */
+}
+
+.answer-area input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 70%; /* Width of the text input */
+}
+
+.answer-area button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50; 
+  color: white; 
+  cursor: pointer;
 }
 
 .score-area {
-  background-color: #F24A4A;
-  padding: 10px 15px;
+  background-color: #fff; /* Background color for the score area */
+  color: black; 
   border-radius: 10px;
-  cursor: pointer;
-  font-size: 20px;
-  color: white;
-}
-
-.restartBtn {
-  background: color #4bdb7c;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-}
-
-input[type="text"],button {
   padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 7px;
+  margin: 20px auto; 
+  width: 80%; 
 }
 
-/* cSpell:ignore gameboard */
-@media (max-width: 600px) {
-  .gameboard {
-    grid-template-columns: repeat (2, 1fr)
-  }
+.restartBtn button {
+  background-color: #f44336; /* Restart button color */
+  color: white; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px; 
+  cursor: pointer;
 }

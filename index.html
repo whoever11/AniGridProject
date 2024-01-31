@@ -7,28 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container"><!-- This is where the title and logo will be displayed -->
         <h1 class="title">AniGrid</h1>
-    <div class="gameBoard"> <!--gameBoard-->
+    </div>
+    <div class="gameboard"> <!-- This is where the boxes will be displayed -->
         <div class="box" id="box0"></div>
         <div class="box" id="box1"></div>
         <div class="box" id="box2"></div>
         <div class="box" id="box3"></div>
         <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7"></div>
+        <div class="box" id="box8"></div>
     </div>
-    <div class="character-container">
-        <img src="image" alt="character" id="character">
-        <div class="speech-bubble" id="question">Question appears here</div>
-    <div class="Answer-area"><!-- This is where the answer typed and start button-->
+    <div class="Question-area"><!-- This is where the question will be displayed -->
+        <h2 class="Question-text">Question</h2>
+        <div class="question" id="question"></div>
+    <div class="Answer-area"><!-- This is where the answer typed-->
         <div class="Answer">
-            <<button id="restart" class="control-button">Restart</button>
-            <input type="text" id="answer" class="answer-input" placeholder="Type your answer here">
-            <button id="submit" class="control-button">Submit</button>
-        </div>
+            <h3 class="Answer-text">Answer</h3>
+            <div class="answer-area">
+                <input type="text" id="answer">
+                <button id="submit">Submit</button>
+            </div>
     </div> 
     <div class="score-area"><!-- This is where the score will be displayed -->
         <h4 class="score-text">Score</h4>
         <div class="score" id="score"></div>
+    </div> <!-- Closing tag for <div class="score-area"> -->
+    <div class="restartBtn">
+        <button id="restart">Restart</button>
     </div>
     <script defer src="script.js"></script>
     </body>
