@@ -1,5 +1,4 @@
 let questionsAndAnswers = [
-    { question: "Who is the Main Character in One Piece?", answer: "Luffy" },
     { question: "My Hero Academia powers are called?", answer: "Quirks" },
     { question: "Naruto's village is called?", answer: "Hidden Leaf Village" },
     { question: "Who is known as the Strongest Character in Jujutsu Kaisen?", answer: "Gojo" },
@@ -18,6 +17,25 @@ let questionsAndAnswers = [
     { question: "What was Gons Hunter Exam number?", answer: "405" },
     { question: "What is Zenitsus first form called?", answer: "Thunderclap" },
     { question: "who gave luffy his straw hat?", answer: "Shanks" },
+    { question: "Who is the protagonist of 'Naruto'?", answer: "Naruto" },
+    { question: "What is the name of the main character in 'One Piece'?", answer: "Luffy" },
+    { question: "What is the name of the main character in 'My Hero Academia'?", answer: "Deku" },
+    { question: "What is the name of the main character in 'Dragon Ball Z'?", answer: "Goku" },
+    { question: "What is the name of the main character in 'Attack on Titan'?", answer: "Eren" },
+    { question: "What is the name of the main character in 'Demon Slayer'?", answer: "Tanjiro" },
+    { question: "What is the name of the main character in 'Hunter x Hunter'?", answer: "Gon" },
+    { question: "What is the name of the main character in 'Death Note'?", answer: "Light" },
+    { question: "What is the name of the main character in 'Fullmetal Alchemist'?", answer: "Edward" },
+    { question: "What is the name of the main character in 'Cowboy Bebop'?", answer: "Spike" },
+    { question: "What is the name of the main character in 'Sailor Moon'?", answer: "Usagi" },
+    { question: "What is the name of the main character in 'Sword Art Online'?", answer: "Kirito" },
+    { question: "What is the name of the main character in 'Neon Genesis Evangelion'?", answer: "Shinji" },
+    { question: "What is the name of the main character in 'Bleach'?", answer: "Ichigo" },
+    { question: "What is the name of the main character in 'Fairy Tail'?", answer: "Natsu" },
+    { question: "What is the name of the main character in 'JoJo's Bizarre Adventure'?", answer: "Jotaro" },
+    { question: "What is the name of the main character in 'Yu Yu Hakusho'?", answer: "Yusuke" },
+    { question: "What is the name of the main character in 'Inuyasha'?", answer: "Inuyasha" },
+
 ]
 //Above is the array of questions and answers
 
@@ -38,18 +56,22 @@ document.querySelectorAll(`.box`).forEach(box => {
 
 // below is the function to check if answer is correct and submit and the score
 let score = 0
-document.getElementById(`submit`).addEventListener(`click`, function() {
-    let userAnswer = document.getElementById(`answer`).value
+document.getElementById('submit').addEventListener('click', function() {
+    let userAnswer = document.getElementById('answer').value
     if (userAnswer.toLowerCase() === questionObj.answer.toLowerCase()) {
-        alert(`Correct!`)//alerts if answer is correct and changes score
+        alert('Correct!') // alerts if answer is correct
         score += 1
+        if (score >= 4) {
+            alert('You win!')// alerts if score is 4 or more
+        }
     } else {
-        alert(`Incorrect!`)//alerts if answer is incorrect and changes score
-        score -= 1
-    } 
-document.getElementById(`answer`).value = ''//clears the answer box after submitting it 
-document.getElementById('score').innerText = score.toString()//converts score to string
-    
+        alert('Incorrect!')// alerts if answer is incorrect
+        if (score > 0) {
+            score -= 1 // Decrease score but not below 0
+        }
+    }
+    document.getElementById('answer').value = '' // clears the answer box after submitting
+    document.getElementById('score').innerText = score.toString() // converts score to string
 })
 
 // restart button and everything on the screen
@@ -58,4 +80,3 @@ document.getElementById(`restart`).addEventListener(`click`, function() {
     document.getElementById(`question`).innerText = ``//clears the question box
     document.getElementById(`score`).innerText = ``//clears the score box
 })
-

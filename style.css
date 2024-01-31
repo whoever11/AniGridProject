@@ -7,88 +7,111 @@ body, html {
 }
 
 .container {
+  display: grid;
   text-align: center; 
   padding: 20px;
+}
+h1 {
+  color: rgb(81, 52, 199); 
+  margin: 0;
+  padding-top: 20px; 
+}
+h2 {
+  color: rgb(27, 213, 86); 
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+h3 {
+  color: rgb(40, 180, 199); 
+  margin: 0;
+  padding-top: 20px; 
+}
+h4 {
+  color: rgb(211, 88, 88); 
+  margin: 0;
+  padding-top: 20px; 
 }
 
 .title {
   color: white; 
   margin: 0;
-  padding-top: 20px; 
+  padding-top: 1px;
+  font-size: 40px;
+  
 }
 
 .gameboard {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; /* Space between boxes */
-  padding: 20px; /* Padding around the gameboard */
+  gap: 5px; /* Space between boxes */
+  padding: 10px; /* Padding around the gameboard */
   justify-content: center;
-}
-
-.box {
-  background-color: #D9D9D9; /* Default color for the boxes */
-  border-radius: 10px; 
-  padding: 40px; 
-  margin-bottom: 10px; 
 }
 #box0 {
   background-color: #d21717; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
+  height: 80px; 
 
 }
 #box1 {
-  background-color: #0e8dd6; /* Default color for the boxes */
+  background-color: #84d80f; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
+  height: 80px;
 
 }
 #box2 {
-  background-color: #d21717; /* Default color for the boxes */
+  background-color: #db11d7; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
+  height: 80px;
 
 }
 #box3 {
-  background-color: #0e8dd6; /* Default color for the boxes */
+  background-color: #e20fc2; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
+  height:80px;
 
 }
 #box4 {
   background-color: #d21717; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
+  height: 80px; 
 
 }
 #box5 {
-  background-color: #0e8dd6; /* Default color for the boxes */
+  background-color:#84d80f; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
-
+  height:80px;
 }
 #box6 {
   background-color: #d21717; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
+  height: 80px;
 
 }
 #box7 {
-  background-color: #0e8dd6; /* Default color for the boxes */
+  background-color:#84d80f; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
 
 }
 #box8 {
-  background-color: #d21717; /* Default color for the boxes */
+  background-color: #e20fc2; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
@@ -97,12 +120,14 @@ body, html {
 
 
 .Question-area {
-  background-color: #fff; /* Background color for the question area */
-  color: black; /* Text color for the question */
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto; 
-  width: 80%; 
+  background-color: #873333; /* Background color for the question area */
+  color: rgb(199, 26, 26); /* Text color for the question */
+  border-radius: 20px;
+  padding: 10px;
+  margin: 2px auto; 
+  width: 90%;
+  height: 200px; 
+  text-align: center;
 }
 
 .Answer-area {
@@ -139,7 +164,7 @@ body, html {
   border-radius: 10px;
   padding: 10px;
   margin: 20px auto; 
-  width: 80%; 
+  width: 50%; 
 }
 
 .restartBtn button {
