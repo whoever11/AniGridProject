@@ -3,7 +3,7 @@ body, html {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  background-color: #1A61B5; 
+  background-color: #000000; 
 }
 
 .container {
@@ -18,14 +18,20 @@ h1 {
 }
 h2 {
   color: rgb(27, 213, 86); 
-  margin: 0;
+  margin: 5px;
   padding-top: 20px;
   text-align: center;
 }
 h3 {
-  color: rgb(40, 180, 199); 
-  margin: 0;
-  padding-top: 20px; 
+  color: rgb(0, 221, 0); 
+  margin: 0px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase; 
 }
 h4 {
   color: rgb(211, 88, 88); 
@@ -36,10 +42,19 @@ h4 {
 .title {
   color: white; 
   background-color:black;
-  background-size: cover;
+  border-radius: 10px;
   margin: 0;
   padding-top: 1px;
-  font-size: 40px;
+  font-size:40px;
+}
+  
+  .rules {
+    color: rgb(25, 169, 213); 
+    background-color:black;
+    border-radius: 10px;
+    margin: 0;
+    padding-top: 1px;
+    font-size: 40px;
 }
 
 .gameboard {
@@ -50,7 +65,7 @@ h4 {
   justify-content: center;
 }
 #box0 {
-  background-color: #d21717; /* Default color for the boxes */
+  background-color: #d21414; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px;
@@ -120,61 +135,93 @@ h4 {
 
 
 .Question-area {
-  background-color: #873333; /* Background color for the question area */
-  color: rgb(235, 4, 4); /* Text color for the question */
-  border-radius: 20px;
+  background-color: #8b7c7c; /* Background color for the question area */
+  color: rgb(220, 195, 3); /* Text color for the question */
+  border-radius: 10px;
   padding: 10px;
   margin: 2px auto; 
-  width: 90%;
-  height: 300px; 
+  width: 100%;
+  height: 200px; 
   font-size: 20px; 
-  border: 2px solid black; 
   text-align: center;
+  border: 2px solid #000; /* Add a 2px solid black border */
 }
 
 .Answer-area {
-  display: flex;
-  justify-content: center; /* Centering answer area contents */
-  align-items: center;
-  gap: 10px; 
-  padding: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 2px auto; 
+  font-size: 20px; 
+  text-align: center; /* Add margin-top to center the answer area under the question */
 }
 
 .Answer {
   flex-grow: 11; /* Answer area takes available space */
 }
 
-.answer-area input[type="text"] {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 70%; /* Width of the text input */
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.answer-area button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  background-color: #4CAF50; 
-  color: white; 
-  cursor: pointer;
-}
-
 .score-area {
-  background-color: #fff; /* Background color for the score area */
-  color: black; 
-  border-radius: 10px;
+  display: flex; 
+  align-items: center;
   padding: 10px;
-  margin: 20px auto; 
-  width: 50%; 
+  margin-top: -36px; /* Updated margin-top value */
+}
+.score-text {
+  color: rgb(224, 225, 230); 
+  font-size: 20px; 
+  margin: 0;
+  padding: 0;
+}
+
+#score {
+  margin: 0px;
+  padding: 5px;
+  font-size: 20px;
+  color: rgb(21, 190, 216); 
 }
 
 .restartBtn button {
   background-color: #f44336; /* Restart button color */
   color: white; 
-  padding: 10px 20px;
+  padding: 30px 40px;
   border-radius: 5px;
   border: none;
-  margin-top: 20px; 
+  margin-top: 70px; 
   cursor: pointer;
 }
+
+.restartBtn button:hover {
+  background-color: #f3c4c0; /* Change color when hovering over the button */
+}
+@media only screen and (max-width: 600px) {
+  #box0,
+  #box1,
+  #box2,
+  #box3,
+  #box4,
+  #box5,
+  #box6,
+  #box7,
+  #box8 {
+    padding: 20px;
+    height: 60px;
+  }
+
+  .Question-area {
+    height: 150px;
+    font-size: 16px;
+  }
+
+  .Answer-area {
+    font-size: 16px;
+  }
+
+  .restartBtn button {
+    padding: 10px 19px;
+  }
+} 
