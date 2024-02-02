@@ -17,7 +17,6 @@ let questions = [
 { 'question: question1', 'answer: answer1'}]
 
 
-
 # Design
 The Top area of the screen will have the name of the game to help style the header. 
 then a 3x3 grid consits of 9 boxes for the player to pick a box for the question.
