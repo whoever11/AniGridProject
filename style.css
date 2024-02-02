@@ -17,7 +17,7 @@ h1 {
   padding-top: 20px; 
 }
 h2 {
-  color: rgb(27, 213, 86); 
+  color: #8a0de3;
   margin: 5px;
   padding-top: 20px;
   text-align: center;
@@ -65,7 +65,7 @@ h4 {
   justify-content: center;
 }
 #box0 {
-  background-color: #0d62e3; /* Default color for the boxes */
+  background-color: #8a0de3; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px;
@@ -81,14 +81,14 @@ h4 {
 
 }
 #box2 {
-  background-color: #db11d7; /* Default color for the boxes */
+  background-color: #8a0de3; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
   height: 80px;
 }
 #box3 {
-  background-color: #0044ee; /* Default color for the boxes */
+  background-color: #ddce02; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
@@ -96,7 +96,7 @@ h4 {
 
 }
 #box4 {
-  background-color: #be07b2; /* Default color for the boxes */
+  background-color: #8a0de3; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px;
@@ -104,14 +104,14 @@ h4 {
 
 }
 #box5 {
-  background-color:#c7e509; /* Default color for the boxes */
+  background-color:#ddce02; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
   height:80px;
 }
 #box6 {
-  background-color: #1111eb; /* Default color for the boxes */
+  background-color: #8a0de3; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
@@ -126,7 +126,7 @@ h4 {
 
 }
 #box8 {
-  background-color: #e20fc2; /* Default color for the boxes */
+  background-color: #8a0de3; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 

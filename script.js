@@ -8,7 +8,7 @@ let questionsAndAnswers = [
  { question: "What is the highest grossing anime film of all time?", answer:"Demon Slayer Mugen Train" },
  { question: "who gave luffy his straw hat?", answer: "Shanks" },
  { question: "Anime with a death notebook?", answer: "Deathnote" },
- { question: "What wall did the Titans attack first?", answer: "Wall Maria" },
+ { question: "What wall did the Titans attack first?", answer: "Maria" },
  { question: "In Jujutsu Kaisen, how many fingers did Yuji eat by the end of the first season?", answer: "three" },
 { question: "In Jujutsu Kaisen, what is Yujis type in girls?", answer: "Jennifer Lawrence" },
 { question: "In Death Note, who was Misa Misas Shinigami?", answer: "Rem" },
@@ -76,6 +76,19 @@ let questionsAndAnswers = [
 { question: "Who is the butler in 'Black Butler'?", answer: "Sebastian" },
 { question: "What is the main character's weapon in 'Soul Eater'?", answer: "Scythe" },
 { question: "Who is the pirate hunter in 'One Piece'?", answer: "Zoro" },
+{question: "who is the green race in dragonballz", answer: "Namekians" },
+{question: "who is the founding titan in attack on titan", answer: "Ymir" },
+{question: "who is the main villan in demon slayer ", answer: "Muzan" },
+{question: "who is the main character in black clover", answer: "Asta" },
+{question: "who is asta's main rival in black clover", answer: "Yuno" },
+{question: "who is the #1 hero in my hero academia", answer: "All Might" },
+{question: "who is the main character in dr stone", answer: "Senku" },
+{question: "what clan is sauske from in naruto", answer: "Uchiha" },
+{question: "who is rock lees sensei in naruto", answer: "Might Guy" },
+{question: "who is vegetas wife in dragonballz", answer: "Bulma" },
+{question: "who is vegetas brother in dragonballz", answer: "Tarble" },
+{question: "who is luffy's brother in one piece", answer: "Ace" },
+
 ]
 //Above is the array of questions and answers
 let questionObj=null //variable to store the question object
