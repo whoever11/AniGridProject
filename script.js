@@ -9,7 +9,6 @@ let questionsAndAnswers = [
  { question: "Anime with a death notebook?", answer: "Deathnote" },
  { question: "What wall did the Titans attack first?", answer: "Maria" },
  { question: "In Jujutsu Kaisen, how many fingers did Yuji eat by the end of the first season?", answer: "three" },
-{ question: "In Jujutsu Kaisen, what is Yujis type in girls?", answer: "Jennifer Lawrence" },
 { question: "In Death Note, who was Misa Misas Shinigami?", answer: "Rem" },
 { question: "What was Christas real name in Attack on Titan?", answer: "Historia" },
 { question: "What does ODM gear stand for?", answer: "Omni Directional Mobility" },
@@ -44,7 +43,6 @@ let questionsAndAnswers = [
 { question: "Who pilots the EVA-01 in 'Neon Genesis Evangelion'?", answer: "Shinji" },
 { question: "Who is the brother of Alphonse in 'Fullmetal Alchemist'?", answer: "Edward" },
 { question: "What is Edward's nickname in 'Fullmetal Alchemist'?", answer: "Fullmetal" },
-{ question: "What anime features the character 'Spike Spiegel'?", answer: "Bebop" },
 { question: "What is the main sport in 'Kuroko's Basketball'?", answer: "Basketball" },
 { question: "Who is the protagonist of 'Demon Slayer'?", answer: "Tanjiro" },
 { question: "What is the central game in 'No Game No Life'?", answer: "Chess" },
@@ -61,7 +59,6 @@ let questionsAndAnswers = [
 { question: "What is Goku's Saiyan name?", answer: "Kakarot" },
 { question: "Who is the main antagonist in 'Death Note'?", answer: "Kira" },
 { question: "Who is the main female character in 'Toradora!'?", answer: "Taiga" },
-{ question: "What is the main character's power in 'My Hero Academia'?", answer: "Quirk" },
 { question: "What game is central in 'Hikaru no Go'?", answer: "Go" },
 { question: "Who is the captain of the Straw Hat Pirates?", answer: "Luffy" },
 { question: "What is the main theme of 'Tokyo Ghoul'?", answer: "Ghouls" },
@@ -85,7 +82,6 @@ let questionsAndAnswers = [
 {question: "who is vegetas wife in dragonballz", answer: "Bulma" },
 {question: "who is vegetas brother in dragonballz", answer: "Tarble" },
 {question: "who is luffy's brother in one piece", answer: "Ace" },
-
 ]
 //Above is the array of questions and answers
 let questionObj=null //variable to store the question object
