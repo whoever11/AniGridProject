@@ -63,7 +63,6 @@ let questionsAndAnswers = [
 { question: "Who is Luffy's navigator in 'One Piece'?", answer: "Nami" },
 { question: "What is Goku's Saiyan name?", answer: "Kakarot" },
 { question: "Who is the main antagonist in 'Death Note'?", answer: "Kira" },
-{ question: "What does 'Doraemon' look like?", answer: "Cat" },
 { question: "Who is the main female character in 'Toradora!'?", answer: "Taiga" },
 { question: "What is the main character's power in 'My Hero Academia'?", answer: "Quirk" },
 { question: "What game is central in 'Hikaru no Go'?", answer: "Go" },
@@ -97,13 +96,15 @@ function displayRandomQuestion() {
     document.querySelector("#question").textContent = questionObj.question
 }
 // function below for locked boxes
-function lockBoxes() {
+function lockBoxes()// function to lock the box after the question has been answered
+{
     document.querySelectorAll(`.box`).forEach(box => {
         box.removeEventListener('click', handleBoxClick)
     })
 }
 // function below for unlocked boxes
-function unlockBoxes() {
+function unlockBoxes()// function to unlock the boxes to be clicked again after the question has been answered
+ {
     document.querySelectorAll(`.box`).forEach(box => {
         box.addEventListener('click', handleBoxClick)
     })
@@ -112,13 +113,13 @@ function unlockBoxes() {
 function handleBoxClick() {
     if (!gameStarted) {
         gameStarted = true
-    }
+    }//if the game has not started, the game starts
     if (answeredBoxes.includes(this)) {
-        return
+        return//if the box has been answered, return
     }
-    currentBox = this
-    displayRandomQuestion()
-    lockBoxes()
+    currentBox = this//assigns the current box to the clicked box
+    displayRandomQuestion()//displays a random question
+    lockBoxes()//locks the boxes
 }
 //function below for endGame
 function endGame() {
@@ -128,7 +129,7 @@ function endGame() {
      score < 4) {
         alert('You lose!')
     }
-    restartGame()
+    restartGame()//restarts the game
 }
 // below is box to click to display random question
 document.querySelectorAll(`.box`).forEach(box => {
@@ -138,14 +139,49 @@ document.querySelectorAll(`.box`).forEach(box => {
 // below is the function to check if answer is correct and submit and the score
 document.getElementById('submit').addEventListener('click', function() {
     if (!questionObj || !currentBox) return
-  
-    document.getElementById('answer').value = '' // clears the answer box after submitting
-    document.getElementById('score').innerText = score.toString() // converts score to string
+    let userAnswer = document.getElementById('answer').value.toLowerCase()
+    if (userAnswer === questionObj.answer.toLowerCase())//if the answer is correct as the answer in the array
+    {
+        alert("correct")//alerts correct
+        score += 1
+        document.getElementById('score').innerText = score.toString()//increases the score by 1
+        answeredBoxes.push(currentBox)//pushes the current box to the answered boxes
+        currentBox.style.backgroundColor = "green"//changes the color of the current box to green
+    } else {
+        alert("incorrect")
+        if (score > 0) {
+            score -= 1
+            document.getElementById('score').innerText = score.toString()//decreases the score by 1
+        }
+        currentBox.style.backgroundColor = "red"
+        answeredBoxes.push(currentBox)//pushes the current box to the answered boxes
+    }
+
+    document.getElementById('answer').value = ''// clears the answer box after submitting
+    unlockBoxes() // unlocks the boxes
+    currentBox = null// clears the current box
+
+    if (
+        answeredBoxes.length === questionsAndAnswers.length ||
+        score >= 4//if there are no more questions or if the score is 4 or more
+    ) {
+        endGame()//ends the game
+    }
 })
 
 // restart button and everything on the screen
-document.getElementById(`restart`).addEventListener(`click`, function() {
-    document.getElementById(`answer`).value = ``//clears the answer box
-    document.getElementById(`question`).innerText = ``//clears the question box
-    document.getElementById(`score`).innerText = ``//clears the score box
-})
+document.getElementById(`restart`).addEventListener(`click`, restartGame)
+function restartGame() {
+    document.getElementById(`answer`).value = `` //clears the answer box
+    document.getElementById(`question`).innerText = `` //clears the question box
+    document.getElementById(`score`).innerText = `` //clears the score box
+    score = 0; //resets the score
+    answeredBoxes = []; //resets the answered boxes
+    document.querySelectorAll(`.box`).forEach(box => {
+        box.style.backgroundColor = `#ccc` //resets the color of the boxes
+    })
+    gameStarted = false //resets the game started
+    unlockBoxes()// this unlocks the boxes to be clicked again
+    QuestionObj = null //clears the question object
+    currentBox = null //clears the current box
+}

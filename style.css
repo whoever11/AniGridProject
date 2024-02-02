@@ -65,7 +65,7 @@ h4 {
   justify-content: center;
 }
 #box0 {
-  background-color: #d21414; /* Default color for the boxes */
+  background-color: #0d62e3; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px;
@@ -73,7 +73,7 @@ h4 {
 
 }
 #box1 {
-  background-color: #84d80f; /* Default color for the boxes */
+  background-color: #ddce02; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
@@ -88,7 +88,7 @@ h4 {
   height: 80px;
 }
 #box3 {
-  background-color: #e20fc2; /* Default color for the boxes */
+  background-color: #0044ee; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
@@ -96,7 +96,7 @@ h4 {
 
 }
 #box4 {
-  background-color: #d21717; /* Default color for the boxes */
+  background-color: #be07b2; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px;
@@ -104,14 +104,14 @@ h4 {
 
 }
 #box5 {
-  background-color:#84d80f; /* Default color for the boxes */
+  background-color:#c7e509; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
   height:80px;
 }
 #box6 {
-  background-color: #d21717; /* Default color for the boxes */
+  background-color: #1111eb; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
@@ -119,7 +119,7 @@ h4 {
 
 }
 #box7 {
-  background-color:#84d80f; /* Default color for the boxes */
+  background-color:#eeea0c; /* Default color for the boxes */
   border-radius: 10px; 
   padding: 40px; 
   margin-bottom: 10px; 
@@ -159,17 +159,11 @@ h4 {
   flex-grow: 11; /* Answer area takes available space */
 }
 
-.parent-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .score-area {
   display: flex; 
   align-items: center;
   padding: 10px;
-  margin-top: -36px; /* Updated margin-top value */
+  margin-top: -36px; /* Updated margin value */
 }
 .score-text {
   color: rgb(224, 225, 230); 
@@ -223,5 +217,6 @@ h4 {
 
   .restartBtn button {
     padding: 10px 19px;
+    margin: 35px 0;
   }
-} 
+}
